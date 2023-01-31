@@ -16,4 +16,14 @@ public class StringTest {
         //then
         Assert.assertEquals(actual,"pangram");
     }
+
+    @Test
+    public void testhackerrankInString(){
+        //given
+        String test = "hhaaaccckkkkeeerrrrrrraaaannnnkk";
+        //when
+        String actual = Strings.hackerrankInString(test);
+        //then
+        Assert.assertEquals(actual,"YES");
+    }
 }

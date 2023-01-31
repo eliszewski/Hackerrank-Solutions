@@ -22,6 +22,13 @@ public class Strings {
         }
         return "pangram";
     }
-
+    public static String hackerrankInString(String s){
+        int j = 0,i ;
+        for(i = 0; i <s.length(); i++){
+            if(s.charAt(i) == "hackerrank".charAt(j)) j++;
+            if(j == "hackerrank".length()) return "YES";
+        }
+        return "NO";
+    }
 
 }

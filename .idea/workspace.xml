@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fcbf5e4-db88-4099-a74c-71baf9d7be18" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Easy/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Easy/Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Easy/Strings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/test/StringTest/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/StringTest/StringTest.java" afterDir="false" />
     </list>
@@ -43,7 +45,20 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.StringTest.testhackerrankInString">
+  <component name="RunManager" selected="JUnit.StringTest.testRepeatedString">
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Easy.test" />
+      <module name="HackerRank Solutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HackerRank Solutions" />
       <extension name="coverage">
@@ -75,6 +90,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringTest.testRepeatedString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HackerRank Solutions" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="StringTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="StringTest" />
+      <option name="MAIN_CLASS_NAME" value="StringTest.StringTest" />
+      <option name="METHOD_NAME" value="testRepeatedString" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StringTest.testhackerrankInString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HackerRank Solutions" />
       <extension name="coverage">
@@ -93,7 +124,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StringTest.testRepeatedString" />
         <item itemvalue="JUnit.StringTest.testhackerrankInString" />
+        <item itemvalue="Application.test" />
         <item itemvalue="JUnit.StringTest.testPangram" />
         <item itemvalue="JUnit.StringTest" />
       </list>

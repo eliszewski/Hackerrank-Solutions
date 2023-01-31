@@ -31,4 +31,22 @@ public class Strings {
         return "NO";
     }
 
+    public static long repeatedString(String s, long n) {
+        long count = 0;
+        for (char c : s.toCharArray()) {
+            if (c == 'a') {
+                count++;
+            }
+        }
+        long repetitions = n / s.length();
+        long remainder = n % s.length();
+        count *= repetitions;
+        for (int i = 0; i < remainder; i++) {
+            if (s.charAt(i) == 'a') {
+                count++;
+            }
+        }
+        return count;
+    }
+
 }

@@ -20,10 +20,20 @@ public class StringTest {
     @Test
     public void testhackerrankInString(){
         //given
-        String test = "hhaaaccckkkkeeerrrrrrraaaannnnkk";
+        String test = "hhaaaccckkkkerrrrrrraaaannnnkk";
         //when
         String actual = Strings.hackerrankInString(test);
         //then
         Assert.assertEquals(actual,"YES");
+    }
+
+    @Test
+    public void testRepeatedString(){
+        //given
+        String test = "aba";
+        //when
+        long actual = Strings.repeatedString(test, 10);
+        //then
+        Assert.assertEquals(actual,7);
     }
 }

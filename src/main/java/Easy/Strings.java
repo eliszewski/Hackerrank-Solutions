@@ -22,6 +22,11 @@ public class Strings {
         }
         return "pangram";
     }
+    /*
+    * O(n)
+    *
+    * */
+
     public static String hackerrankInString(String s){
         int j = 0,i ;
         for(i = 0; i <s.length(); i++){

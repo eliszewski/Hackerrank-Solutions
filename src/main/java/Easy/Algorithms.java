@@ -41,4 +41,9 @@ public class Algorithms {
         return days;
     }
 
+    public static int saveThePrisoner(int prisoners, int candies, int startingPos) {
+        return (candies + startingPos - 1) % prisoners != 0 
+        ? (candies + startingPos - 1) % prisoners : prisoners;
+}
+
 }

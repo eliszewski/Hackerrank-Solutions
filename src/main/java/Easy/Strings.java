@@ -66,6 +66,25 @@ public class Strings {
         System.out.println(sb.toString());
     }
 }
-
-
+//lower, upper, special, number, len of 6
+public static int minimumNumber(int n, String password) {
+    boolean upper = false;
+    boolean lower = false;
+    boolean special = false;
+    boolean digit = false;
+    int conditions = 0;
+    for (int i = 0; i < n; i++) {
+        char c = password.charAt(i);
+        if(Character.isUpperCase(c)) upper = true;
+        if(Character.isLowerCase(c)) lower = true;
+        if(Character.isDigit(c)) digit = true;
+        if(!Character.isDigit(c) && !Character.isAlphabetic(c)) special = true;
+    }
+    if(digit) conditions++;
+    if(upper) conditions++;
+    if(lower) conditions++;
+    if(special) conditions++;
+    if(6 - n < 4 - conditions) return 4 - conditions;
+    return 6 - n;
+}
 }

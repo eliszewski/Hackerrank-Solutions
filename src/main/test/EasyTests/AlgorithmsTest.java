@@ -18,5 +18,16 @@ public class AlgorithmsTest {
         Assert.assertEquals(actual,1);
     }
 
+    @Test
+    public void testFindMinDays(){
+        //given
+        double[] test = new double[]{1.22, 1.02, 2.3};
+        //when
+        int actual = Algorithms.findMinDays(test);
+        //then
+        Assert.assertEquals(actual,2);
+    }
+
+
 
 }

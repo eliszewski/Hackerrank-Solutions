@@ -4,6 +4,7 @@ public class test {
     public static void main(String[] args) {
         String password = "P@ss";
         System.out.println("Secured? "+validate(password));
+
     }
     //
     // 0(n)

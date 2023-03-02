@@ -54,4 +54,18 @@ public class Strings {
         return count;
     }
 
+    public static void staircase(int n) {
+    for (int i = 0; i < n; i++) {
+        StringBuilder sb = new StringBuilder();
+        for (int j = 0; j < n - i - 1; j++) {
+            sb.append(" ");
+        }
+        for (int u = 0; u < i + 1; u++) {
+            sb.append("#");
+        }
+        System.out.println(sb.toString());
+    }
+}
+
+
 }

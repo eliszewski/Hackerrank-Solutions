@@ -84,7 +84,17 @@ public static int minimumNumber(int n, String password) {
     if(upper) conditions++;
     if(lower) conditions++;
     if(special) conditions++;
-    if(6 - n < 4 - conditions) return 4 - conditions;
-    return 6 - n;
+    return Math.max(6 - n, 4 - conditions);
+    }
+
+public static int marsExploration(String s) {
+    int counter = 0;
+    for (int i = 0; i < s.length(); i+=3) {
+        String sub = s.substring(i, i + 3);
+        if(sub.charAt(0) != 'S') counter++;
+        if(sub.charAt(1) != 'O') counter++;
+        if(sub.charAt(2) != 'S') counter++;
+    }
+    return counter;
 }
 }

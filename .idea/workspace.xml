@@ -7,8 +7,6 @@
     <list default="true" id="8fcbf5e4-db88-4099-a74c-71baf9d7be18" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Easy/Algorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Easy/Algorithms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Easy/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Easy/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/test/EasyTests/AlgorithmsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/test/EasyTests/AlgorithmsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,9 +1,8 @@
 package Easy;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Algorithms {
     public static int getNumOfPairs(List<Integer> list, int value){
@@ -44,6 +43,21 @@ public class Algorithms {
     public static int saveThePrisoner(int prisoners, int candies, int startingPos) {
         return (candies + startingPos - 1) % prisoners != 0 
         ? (candies + startingPos - 1) % prisoners : prisoners;
-}
+    }
 
-}
+    public static int migratoryBirds(List<Integer> arr) {
+        Map<Integer, Long> counts = arr.stream()
+                .collect(Collectors.groupingBy(x -> x , Collectors.counting()));
+        Long maxI = counts.get(arr.get(0));
+        Integer max = arr.get(0);
+        for (Map.Entry<Integer, Long> entry: counts.entrySet()
+             ) {
+            if(entry.getValue() > maxI) {maxI = entry.getValue(); max = entry.getKey();}
+            else if ((long) entry.getValue() == maxI && entry.getKey() < max) {
+                maxI = entry.getValue(); max = entry.getKey();
+            }
+        }
+        return max;
+        }
+    }
+

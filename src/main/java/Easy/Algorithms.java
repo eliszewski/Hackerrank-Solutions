@@ -59,5 +59,13 @@ public class Algorithms {
         }
         return max;
         }
-    }
+        //determine front or back. subtract n / 2
+        // find number of flips
+        public static int pageCount(int n, int p) {
+            int fromFront = p / 2;
+            int fromBack = (n / 2) - (p / 2);
+            return Math.min(fromFront, fromBack);
+        }
+
+}
 

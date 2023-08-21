@@ -1,10 +1,17 @@
 package Easy;
 
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+
 public class test {
     public static void main(String[] args) {
         String password = "P@ss";
         System.out.println("Secured? "+validate(password));
-
+        List<Integer> linked = new LinkedList<>();
+        linked.add(12);
+        Set<Integer> setter = new LinkedHashSet<>();
     }
     //
     // 0(n)

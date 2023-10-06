@@ -1,11 +1,12 @@
 package EasyTests;
 
 import Easy.Algorithms;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class AlgorithmsTest {
     @Test
@@ -15,7 +16,7 @@ public class AlgorithmsTest {
         //when
         int actual = Algorithms.sockMerchant(test.size(),test);
         //then
-        Assert.assertEquals(actual,1);
+        assertThat(actual).isEqualTo(1);
     }
 
     @Test
@@ -25,7 +26,7 @@ public class AlgorithmsTest {
         //when
         int actual = Algorithms.findMinDays(test);
         //then
-        Assert.assertEquals(actual,2);
+        assertThat(actual).isEqualTo(2);
     }
 
 

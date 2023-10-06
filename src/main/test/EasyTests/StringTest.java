@@ -1,8 +1,10 @@
 package EasyTests;
 
 import Easy.Strings;
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class StringTest {
 
@@ -13,7 +15,7 @@ public class StringTest {
         //when
         String actual = Strings.pangrams(test);
         //then
-        Assert.assertEquals(actual,"pangram");
+        assertThat(actual).isEqualTo("pangram");
     }
 
     @Test
@@ -23,7 +25,8 @@ public class StringTest {
         //when
         String actual = Strings.hackerrankInString(test);
         //then
-        Assert.assertEquals(actual,"YES");
+        assertThat(actual).isEqualTo("YES");
+
     }
 
     @Test
@@ -33,6 +36,6 @@ public class StringTest {
         //when
         long actual = Strings.repeatedString(test, 10);
         //then
-        Assert.assertEquals(actual,7);
+        assertThat(actual).isEqualTo(7);
     }
 }

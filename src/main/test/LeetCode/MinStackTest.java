@@ -9,7 +9,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class MinStackTest {
     private final MinStack subject = new MinStack();
 
-
     @Test
     public void getMinimum_standardData(){
         populateSubject(1,2,3);

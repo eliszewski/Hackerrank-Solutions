@@ -56,14 +56,9 @@ public class Strings {
 
     public static void staircase(int n) {
     for (int i = 0; i < n; i++) {
-        StringBuilder sb = new StringBuilder();
-        for (int j = 0; j < n - i - 1; j++) {
-            sb.append(" ");
-        }
-        for (int u = 0; u < i + 1; u++) {
-            sb.append("#");
-        }
-        System.out.println(sb.toString());
+        String sb = " ".repeat(n - i - 1) +
+                "#".repeat(i + 1);
+        System.out.println(sb);
     }
 }
 //lower, upper, special, number, len of 6
@@ -97,4 +92,15 @@ public static int marsExploration(String s) {
     }
     return counter;
 }
+public static boolean isPalindrome(String s){
+    char[] chars = s.toCharArray();
+    int j = chars.length - 1;
+    for (int i = 0; i < chars.length; i++) {
+        if(chars[i] != chars[j]) return false;
+        if(i == j) break;
+        j--;
+    }
+    return true;
+}
+
 }

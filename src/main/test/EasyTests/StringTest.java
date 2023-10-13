@@ -9,7 +9,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class StringTest {
 
     @Test
-    public void testPangram(){
+    void testPangram(){
         //given
         String test = "The five boxing wizards jump quickly";
         //when
@@ -19,7 +19,7 @@ public class StringTest {
     }
 
     @Test
-    public void testhackerrankInString(){
+    void testhackerrankInString(){
         //given
         String test = "hhaaaccckkkkerrrrrrraaaannnnkk";
         //when
@@ -30,12 +30,32 @@ public class StringTest {
     }
 
     @Test
-    public void testRepeatedString(){
+    void testRepeatedString(){
         //given
         String test = "aba";
         //when
         long actual = Strings.repeatedString(test, 10);
         //then
         assertThat(actual).isEqualTo(7);
+    }
+
+    @Test
+    void isPalindrome_true(){
+        //given
+        String test = "aba";
+        //when
+        boolean actual = Strings.isPalindrome(test);
+        //then
+        assertThat(actual).isTrue();
+    }
+
+    @Test
+    void isPalindrome_false(){
+        //given
+        String test = "zhg";
+        //when
+        boolean actual = Strings.isPalindrome(test);
+        //then
+        assertThat(actual).isFalse();
     }
 }

@@ -90,7 +90,20 @@ public class Algorithms {
         return answer;
     }
 
-    public static void main(String[] args) {
-        System.out.println("hello world");
+    //O(logn)
+    public static int binarySearch(int targetValue, int[] arr) {
+        int low = 0, high = arr.length - 1;
+        while(low <= high){
+            int mid =  (low + high) / 2;
+            if(arr[mid] == targetValue){
+                return mid;
+            }
+            else if(arr[mid] < targetValue) low = mid + 1;
+            else if(arr[mid] > targetValue) high = mid - 1;
+        }
+        return -1;
     }
 }
+
+
+

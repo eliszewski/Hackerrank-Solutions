@@ -29,6 +29,40 @@ public class AlgorithmsTest {
         assertThat(actual).isEqualTo(2);
     }
 
+    @Test
+    void binarySearch_whenElementIsPresent_returnsIndex(){
+        int[] arr = {1,2,5,7,10};
 
+        int actual = Algorithms.binarySearch(5,arr);
+
+        assertThat(actual).isEqualTo(2);
+    }
+
+    @Test
+    void binarySearch_whenElementIsNotPresent_returnsNegativeOne(){
+        int[] arr = {1,2,5,7,10};
+
+        int actual = Algorithms.binarySearch(6,arr);
+
+        assertThat(actual).isEqualTo(-1);
+    }
+
+    @Test
+    void binarySearch_whenElementIsPresentInEndIndex_returnsIndex(){
+        int[] arr = {1,2,5,7,10};
+
+        int actual = Algorithms.binarySearch(10,arr);
+
+        assertThat(actual).isEqualTo(4);
+    }
+
+    @Test
+    void binarySearch_whenArrayIsEmpty_returnsNegativeOne(){
+        int[] arr = {};
+
+        int actual = Algorithms.binarySearch(10,arr);
+
+        assertThat(actual).isEqualTo(-1);
+    }
 
 }

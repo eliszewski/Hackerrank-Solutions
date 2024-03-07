@@ -1,0 +1,68 @@
+package leetcode;
+
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class Solutions {
+    public static boolean containsDuplicate(int[] nums) {
+        HashSet<Integer> exist = new HashSet<>();
+        for (int num : nums) {
+            if (!exist.add(num)) return true;
+        }
+        return false;
+    }
+
+    public static boolean isAnagram(String s, String t) { // maybe faster in some cases
+//        if(s.length() != t.length()) return false;
+//
+//        Map<Character,Integer> sMap = new HashMap<>();
+//        Map<Character,Integer> tMap = new HashMap<>();
+//
+//        for(char c : s.toCharArray()){
+//            sMap.put(c,sMap.getOrDefault(c,0) + 1);
+//        }
+//
+//        for(char c : t.toCharArray()){
+//            tMap.put(c,tMap.getOrDefault(c,0) + 1);
+//        }
+//
+//        return sMap.equals(tMap);
+        if (t.length() != s.length()) {
+            return false;
+        }
+
+        char[] charArray1 = s.toCharArray();
+        char[] charArray2 = t.toCharArray();
+
+        Arrays.sort(charArray1);
+        Arrays.sort(charArray2);
+
+        return Arrays.equals(charArray1, charArray2);
+    }
+
+    public int[] getConcatenation(int[] nums) {
+        int[] copy1 = Arrays.copyOf(nums, nums.length * 2);
+        int counter = 0;
+        for (int i = nums.length ; i < copy1.length; i++) {
+            copy1[i] = nums[counter];
+            counter++;
+        }
+        return copy1;
+    }
+
+    public int[] replaceElements(int[] arr) { //[17,18,5,4,6,1]
+        int max = -1;
+        int temp;
+
+        for (int i = arr.length - 1; i >= 0; i++) {
+            if(arr[i] > max){
+                temp = arr[i];
+                arr[i] = max;
+                max = temp;
+            }else{
+                arr[i] = max;
+            }
+        }
+        return arr;
+    }
+}
